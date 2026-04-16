@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background-color: #4a6592;
+}
+
+header {
+    background-color: #0b2c3d;
+    color: gold;
+    padding: 20px;
+}
+
+header p {
+    color: #ddd;
+    margin-top: 10px;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 30px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+.card p {
+    width: 45%;
+    font-size: 14px;
+}
+
+.card img {
+    width: 50%;
+    height: auto;
+    
+}
