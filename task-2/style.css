@@ -1,0 +1,88 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* الجسم */
+body {
+    background: #eee;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;  /* في النص أفقي */
+    align-items: center;      /* في النص رأسي */
+}
+
+.left{
+    width: 50%;
+}
+
+.right{
+    width: 50%;
+}
+
+/* الكونتينر */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* مسافة بين الصورة والفورم */
+}
+
+/* الصورة */
+.doctor {
+    width: 350px;
+}
+
+/* الفورم */
+.right {
+    background: transparent;
+}
+
+/* العنوان */
+h1 {
+    display: inline-block;   /* دي أهم نقطة */
+    border-bottom: 3px solid red;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+/* الصف */
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+/* اللابل */
+.row label {
+    width: 150px;
+}
+
+/* الانبوت */
+input, textarea {
+    padding: 5px;
+    border: 1px solid #999;
+    border-radius: 3px;
+}
+
+/* الحقول الصغيرة */
+.small {
+    width: 120px;
+    margin-right: 10px;
+}
+
+/* textarea */
+textarea {
+    width: 250px;
+    height: 80px;
+}
+
+/* زرار */
+input[type="submit"] {
+    margin-left: 150px;
+    padding: 6px 20px;
+    cursor: pointer;
+}
