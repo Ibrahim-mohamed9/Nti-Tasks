@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Alegreya Sans";
+}
+
+.header {
+    background-image: url(img/drew-coffman-1872.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.nav {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.link {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 35px 50px 0 0;
+}
+
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+.link li a:hover {
+    color: #ff9900;
+}
+
+.icon {
+    margin: 15px 0 0 50px ;
+}
+.welcome{
+    position: absolute;
+    top: 50%;                 /* انزل نص المسافة من فوق */
+    left: 50%;                /* ادخل نص المسافة من الشمال */
+    transform: translate(-50%, -50%); /* الحركة دي بتعوض حجم الـ div نفسه عشان يجي في السنتر بالملي */
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+.welcome h1{
+    font-size: 80px;
+    margin: 15px 0 20px 0;    
+    line-height: 1.2em;
+}
+
+.btn {
+    width: 130px;         
+    height: 55px;         
+    font-size: 18px;      
+    font-weight: bold;     
+    border-radius: 15px;    
+    transition: 0.3s;      
+    margin: 25px 15px;         
+    cursor: pointer;
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-brown {
+    background-color: #8B4513; 
+    color: white;             
+    border: none;              
+}
+
+.btn-brown:hover {
+    background-color: #725845; 
+}
+
+
+.btn-outline {
+    background-color: transparent;
+    color: #8B4513;              
+    border: 2px solid #8B4513;    
+}
+
+.btn-outline:hover {
+    background-color: #8B4513;     
+    color: white;                 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 10%; 
+    gap: 60px; 
+    background-color: #fff;
+}
+
+.section1-right {
+    flex: 1;
+}
+
+.section1-right img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
+}
+
+.section1-left {
+    flex: 1;
+}
+
+.section1-left h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif; 
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #574343;
+    margin-bottom: 30px;
+}
+
+.features-list h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+
+.features-list h4::before {
+    content: "•"; 
+    color: #8B4513; 
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* التجاوب للموبايل */
+@media (max-width: 768px) {
+    .first-section {
+        flex-direction: column;
+        padding: 40px 5%;
+        text-align: center;
+    }
+    
+    .features-list h4 {
+        padding-left: 0;
+    }
+    
+    .features-list h4::before {
+        display: none; 
+    }
+}
+.second-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 10%; 
+    gap: 60px; 
+    background-color: #f3efef;
+}
+
+.section2-right h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif; 
+}
+
+.section2-right{
+    flex: 1;
+}
+
+.section2-left img{
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+@media (max-width: 768px) {
+    .second-section{
+        flex-direction: column;
+        padding: 40px 5%;
+        text-align: center;
+    }
+}
+
+.title{
+    font-size: 16px;
+    line-height: 1.8;
+    color: #574343;
+    margin: 30px 0 30px 0;
+    text-align: center;
+}
+
+.section-3{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10%;
+    gap: 40px;
+}
+
+.section-3 h3{
+    font-size: 24px;
+    color: #523b3b;
+    margin: 20px 0 15px 0;
+    text-align: center;
+}
+
+.section-3 p{
+    font-size: 17px;
+    color: #725e5e;
+    margin: 20px 0 15px 0;
+    text-align: center;
+}
+
+
+.map-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px 10%; 
+    gap: 50px;
+    background-color: #fff;
+}
+
+.contact-description {
+    flex: 1;
+}
+
+.contact-description h2 {
+    font-family: 'Georgia', serif; 
+    font-size: 34px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.main-text {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.sub-heading {
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+
+.details-list h4 {
+    font-size: 15px;
+    font-weight: 400; 
+    color: #555;
+    margin-bottom: 12px;
+}
+
+
+.location-box {
+    flex: 1;
+}
+
+.location-box iframe {
+    width: 100%;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08); 
+}
+
+@media (max-width: 992px) {
+    .map-section {
+        flex-direction: column; 
+        padding: 40px 5%;
+    }
+
+    .location-box {
+        width: 100%;
+    }
+}
+.main-footer {
+    background-color: #3b3734;
+    color: #ccc;
+    padding: 80px 10%;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.footer-col h3 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #555;
+    display: inline-block;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.footer-links li::before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    color: #777;
+}
+
+.footer-contact p {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
