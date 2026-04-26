@@ -1,9 +1,6 @@
-/* ===========================
-   GLOBAL RESET & BASE
-=========================== */
-*,
-*::before,
-*::after {
+/*GLOBAL RESET & BASE*/
+*
+{ 
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -50,9 +47,7 @@ img {
     background-color: #f6f9fe;
 }
 
-/* ===========================
-   SECTION HEADER
-=========================== */
+/* SECTION HEADER*/
 .section-header {
     text-align: center;
     margin-bottom: 50px;
@@ -85,9 +80,7 @@ img {
     margin-top: 8px;
 }
 
-/* ===========================
-   HEADER / NAVBAR
-=========================== */
+/* HEADER / NAVBAR */
 #header {
     position: fixed;
     top: 0;
@@ -185,9 +178,7 @@ img {
     border-top: 3px solid #1977cc;
 }
 
-/* ===========================
-   HERO
-=========================== */
+/*  HERO */
 #hero {
     position: relative;
     height: 100vh;
@@ -251,9 +242,7 @@ img {
     background: #1461a8;
 }
 
-/* ===========================
-   ABOUT
-=========================== */
+/*ABOUT*/
 .about-row {
     display: flex;
     gap: 60px;
@@ -326,9 +315,7 @@ img {
     line-height: 1.7;
 }
 
-/* ===========================
-   SERVICES
-=========================== */
+/* SERVICES*/
 .services-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -399,9 +386,7 @@ img {
     color: #1977cc;
 }
 
-/* ===========================
-   CALL TO ACTION
-=========================== */
+/* CALL TO ACTION */
 #cta {
     position: relative;
     padding: 80px 0;
@@ -462,9 +447,7 @@ img {
     background: #e8f1fa;
 }
 
-/* ===========================
-   PORTFOLIO
-=========================== */
+/* PORTFOLIO */
 .portfolio-filters {
     display: flex;
     justify-content: center;
@@ -544,9 +527,7 @@ img {
     color: rgba(255, 255, 255, 0.85);
 }
 
-/* ===========================
-   PRICING
-=========================== */
+/*  PRICING */
 .pricing-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -657,9 +638,7 @@ img {
     color: #1977cc;
 }
 
-/* ===========================
-   FAQ
-=========================== */
+/* FAQ */
 .faq-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -696,9 +675,7 @@ img {
     padding-left: 22px;
 }
 
-/* ===========================
-   TEAM
-=========================== */
+/* TEAM */
 .team-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -786,9 +763,7 @@ img {
     color: #6c757d;
 }
 
-/* ===========================
-   CONTACT
-=========================== */
+/* CONTACT */
 .contact-row {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -884,9 +859,7 @@ img {
     background: #1461a8;
 }
 
-/* ===========================
-   FOOTER
-=========================== */
+/* FOOTER */
 #footer {
     background: #1b2a46;
     color: #9db4cc;
